@@ -47,12 +47,10 @@ with tab2:
 
     with col1:
         st.subheader("Tabla Resumen por Departamento")
-        # --- ADAPTAR AQUÍ ---
-        # Carga tu tabla resumen desde un archivo CSV.
-        # Asegúrate de que el archivo esté en la carpeta 'data/'.
+        
         try:
             df_summary = pd.read_csv("data/tabla_resumen_departamentos.csv")
-            st.dataframe(df_summary.set_index('DEPARTAMENTO'), height=600)
+            st.dataframe(df_summary.set_index('Departamento'), height=600)
         except FileNotFoundError:
             st.error("Asegúrate de tener el archivo 'tabla_resumen_departamentos.csv' en la carpeta 'data/'.")
 
