@@ -8,3 +8,4 @@ ipykernel
 nbformat
 Geopandas
 Folium
+streamlit-folium
